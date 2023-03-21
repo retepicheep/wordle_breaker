@@ -1,11 +1,12 @@
 import json
-from random import randint
+from random import randint, choice
 
 data = json.load(open("dict.json"))
+# words = list(data.items())
 
 def get_word():
-    wordnum = randint(len(data))
-    print(data.index(wordnum)
+    word = choice(data)
+    return word
 
 get_word()
 
